@@ -1,6 +1,5 @@
 import Typography from "@mui/material/Typography";
-import { ReactNode } from "react";
-import React from "react";
+import React, { ReactNode } from "react";
 
 export interface IBookTitleProps {
   children: ReactNode;
