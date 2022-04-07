@@ -11,5 +11,9 @@ export interface IReadingBookProps {
 }
 
 export default function ReadingBook(props: IReadingBookProps) {
-  return <DefaultBookCard {...props}>{props.children}</DefaultBookCard>;
+  return (
+    <div data-testid="readingBook">
+      <DefaultBookCard {...props}>{props.children}</DefaultBookCard>
+    </div>
+  );
 }

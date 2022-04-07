@@ -1,5 +1,5 @@
 import { Grid, Typography } from "@mui/material";
-
+import React from "react";
 const ExploreHeader = () => {
   return (
     <div>
@@ -11,6 +11,7 @@ const ExploreHeader = () => {
           width: "1000px",
           marginLeft: "450px",
         }}
+        data-testid="exploreHeader"
       >
         <Grid item xs={4}>
           <Typography

@@ -1,35 +1,35 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1649329661362" clover="3.2.0">
-  <project timestamp="1649329661362" name="All files">
-    <metrics statements="31" coveredstatements="31" conditionals="2" coveredconditionals="2" methods="18" coveredmethods="18" elements="51" coveredelements="51" complexity="0" loc="31" ncloc="31" packages="18" files="18" classes="18"/>
+<coverage generated="1649339855796" clover="3.2.0">
+  <project timestamp="1649339855796" name="All files">
+    <metrics statements="50" coveredstatements="50" conditionals="6" coveredconditionals="6" methods="30" coveredmethods="30" elements="86" coveredelements="86" complexity="0" loc="50" ncloc="50" packages="27" files="27" classes="27"/>
     <package name="components.atoms.Author">
       <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
       <file name="Author.tsx" path="/home/ganesd/Desktop/React/blinklist_app/src/components/atoms/Author/Author.tsx">
         <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
-        <line num="10" count="1" type="stmt"/>
+        <line num="10" count="8" type="stmt"/>
       </file>
     </package>
     <package name="components.atoms.BookTitle">
       <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
       <file name="BookTitle.tsx" path="/home/ganesd/Desktop/React/blinklist_app/src/components/atoms/BookTitle/BookTitle.tsx">
         <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
-        <line num="9" count="1" type="stmt"/>
+        <line num="9" count="5" type="stmt"/>
       </file>
     </package>
     <package name="components.atoms.ExploreContent">
       <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
       <file name="ExploreContent.tsx" path="/home/ganesd/Desktop/React/blinklist_app/src/components/atoms/ExploreContent/ExploreContent.tsx">
         <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
-        <line num="4" count="1" type="stmt"/>
-        <line num="5" count="1" type="stmt"/>
+        <line num="4" count="2" type="stmt"/>
+        <line num="5" count="2" type="stmt"/>
       </file>
     </package>
     <package name="components.atoms.ExploreTitle">
       <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
       <file name="ExploreTitle.tsx" path="/home/ganesd/Desktop/React/blinklist_app/src/components/atoms/ExploreTitle/ExploreTitle.tsx">
         <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
-        <line num="4" count="1" type="stmt"/>
-        <line num="5" count="1" type="stmt"/>
+        <line num="4" count="2" type="stmt"/>
+        <line num="5" count="2" type="stmt"/>
       </file>
     </package>
     <package name="components.atoms.Footer.BlinkWithTag">
@@ -108,7 +108,7 @@
       <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
       <file name="Person.tsx" path="/home/ganesd/Desktop/React/blinklist_app/src/components/atoms/Person/Person.tsx">
         <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
-        <line num="5" count="1" type="stmt"/>
+        <line num="5" count="3" type="stmt"/>
       </file>
     </package>
     <package name="components.atoms.Search">
@@ -123,22 +123,95 @@
       <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
       <file name="Timer.tsx" path="/home/ganesd/Desktop/React/blinklist_app/src/components/atoms/Timer/Timer.tsx">
         <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
-        <line num="10" count="1" type="stmt"/>
+        <line num="10" count="11" type="stmt"/>
       </file>
     </package>
     <package name="components.atoms.TimerIcon">
       <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
       <file name="TimerIcon.tsx" path="/home/ganesd/Desktop/React/blinklist_app/src/components/atoms/TimerIcon/TimerIcon.tsx">
         <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+        <line num="5" count="9" type="stmt"/>
+      </file>
+    </package>
+    <package name="components.molecules.Banner">
+      <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+      <file name="Banner.tsx" path="/home/ganesd/Desktop/React/blinklist_app/src/components/molecules/Banner/Banner.tsx">
+        <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
         <line num="5" count="1" type="stmt"/>
+        <line num="6" count="1" type="stmt"/>
+      </file>
+    </package>
+    <package name="components.molecules.BookCard.AddToLibrary">
+      <metrics statements="3" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2"/>
+      <file name="AddToLibrary.tsx" path="/home/ganesd/Desktop/React/blinklist_app/src/components/molecules/BookCard/AddToLibrary/AddToLibrary.tsx">
+        <metrics statements="3" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2"/>
+        <line num="9" count="2" type="stmt"/>
+        <line num="10" count="2" type="stmt"/>
+        <line num="14" count="1" type="stmt"/>
+      </file>
+    </package>
+    <package name="components.molecules.BookCard.DefaultBook">
+      <metrics statements="1" coveredstatements="1" conditionals="4" coveredconditionals="4" methods="1" coveredmethods="1"/>
+      <file name="DefaultBookCard.tsx" path="/home/ganesd/Desktop/React/blinklist_app/src/components/molecules/BookCard/DefaultBook/DefaultBookCard.tsx">
+        <metrics statements="1" coveredstatements="1" conditionals="4" coveredconditionals="4" methods="1" coveredmethods="1"/>
+        <line num="20" count="4" type="stmt"/>
+      </file>
+    </package>
+    <package name="components.molecules.BookCard.ReadingBook">
+      <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+      <file name="ReadingBook.tsx" path="/home/ganesd/Desktop/React/blinklist_app/src/components/molecules/BookCard/ReadingBook/ReadingBook.tsx">
+        <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+        <line num="14" count="1" type="stmt"/>
+      </file>
+    </package>
+    <package name="components.molecules.BookDetail">
+      <metrics statements="3" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2"/>
+      <file name="BookDetail.tsx" path="/home/ganesd/Desktop/React/blinklist_app/src/components/molecules/BookDetail/BookDetail.tsx">
+        <metrics statements="3" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2"/>
+        <line num="10" count="3" type="stmt"/>
+        <line num="11" count="3" type="stmt"/>
+        <line num="46" count="1" type="stmt"/>
+      </file>
+    </package>
+    <package name="components.molecules.DisplayTime">
+      <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+      <file name="DisplayTime.tsx" path="/home/ganesd/Desktop/React/blinklist_app/src/components/molecules/DisplayTime/DisplayTime.tsx">
+        <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+        <line num="10" count="8" type="stmt"/>
+        <line num="11" count="8" type="stmt"/>
+      </file>
+    </package>
+    <package name="components.molecules.ExploreHeader">
+      <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+      <file name="ExploreHeader.tsx" path="/home/ganesd/Desktop/React/blinklist_app/src/components/molecules/ExploreHeader/ExploreHeader.tsx">
+        <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+        <line num="3" count="1" type="stmt"/>
+        <line num="4" count="1" type="stmt"/>
+      </file>
+    </package>
+    <package name="components.molecules.ExploreMenu">
+      <metrics statements="3" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2"/>
+      <file name="ExploreMenuItem.tsx" path="/home/ganesd/Desktop/React/blinklist_app/src/components/molecules/ExploreMenu/ExploreMenuItem.tsx">
+        <metrics statements="3" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2"/>
+        <line num="12" count="2" type="stmt"/>
+        <line num="13" count="2" type="stmt"/>
+        <line num="17" count="1" type="stmt"/>
+      </file>
+    </package>
+    <package name="components.molecules.View">
+      <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+      <file name="View.tsx" path="/home/ganesd/Desktop/React/blinklist_app/src/components/molecules/View/View.tsx">
+        <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+        <line num="11" count="2" type="stmt"/>
+        <line num="12" count="2" type="stmt"/>
       </file>
     </package>
     <package name="theme">
       <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
       <file name="index.tsx" path="/home/ganesd/Desktop/React/blinklist_app/src/theme/index.tsx">
         <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
-        <line num="37" count="1" type="stmt"/>
-        <line num="84" count="1" type="stmt"/>
+        <line num="37" count="7" type="stmt"/>
+        <line num="84" count="7" type="stmt"/>
       </file>
     </package>
   </project>

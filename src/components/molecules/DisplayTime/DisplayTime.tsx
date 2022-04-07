@@ -1,4 +1,4 @@
-import { ReactNode } from "react";
+import React, { ReactNode } from "react";
 import { useStyles } from "../../../theme";
 import Timer from "../../atoms/Timer/Timer";
 import TimerIcon from "../../atoms/TimerIcon/TimerIcon";

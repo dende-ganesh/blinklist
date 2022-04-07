@@ -1,5 +1,5 @@
 import { Link, Button } from "@mui/material";
-import { ReactNode } from "react";
+import React, { ReactNode } from "react";
 import { useStyles } from "../../../theme";
 
 export interface IExploreMenuItemProps {
@@ -19,6 +19,7 @@ export default function ExploreMenuItem(props: IExploreMenuItemProps) {
         variant="text"
         startIcon={props.starticon}
         className={classes.exploreItem}
+        data-testid="exploreMenuItem"
       >
         {props.children}
       </Button>

@@ -4,7 +4,7 @@ import Author from "../../../atoms/Author/Author";
 import BookTitle from "../../../atoms/BookTitle/BookTitle";
 import DisplayTime from "../../DisplayTime/DisplayTime";
 import View from "../../View/View";
-import { ReactNode } from "react";
+import React, { ReactNode } from "react";
 import Box from "@material-ui/core/Box";
 
 export interface IBookCardProps {
@@ -28,6 +28,7 @@ export default function BookCard(props: IBookCardProps) {
       }}
       container
       direction="column"
+      data-testid="defaultBookCard"
     >
       <img src={`CoverImages/${props.image}.png`} alt="Book "></img>
       <Box flexGrow={1}>
@@ -48,12 +49,16 @@ export default function BookCard(props: IBookCardProps) {
             <Grid item>
               <DisplayTime>{props.time}</DisplayTime>
             </Grid>
-            <Grid item>{props.reads && <View>{props.reads}</View>}</Grid>
+            <Grid item>
+              {props.reads && (
+                <View data-testid="noOfReads">{props.reads}</View>
+              )}
+            </Grid>
           </Grid>
         </Grid>
       </Box>
       {`${props.children}` !== "undefined" && (
-        <Grid item container>
+        <Grid item container data-testid="readAgain">
           {props.children}
         </Grid>
       )}
