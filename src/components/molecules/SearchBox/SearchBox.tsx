@@ -1,5 +1,6 @@
 import { useStyles } from "../../../theme";
 import Search from "../../atoms/Search/Search";
+import React from "react";
 export const SearchBox = () => {
   const classes = useStyles();
   return (

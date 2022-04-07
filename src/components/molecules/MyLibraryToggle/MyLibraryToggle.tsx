@@ -1,6 +1,6 @@
 import { Typography } from "@mui/material";
-import Grid from "@mui/material/Grid/Grid";
-import * as React from "react";
+import Grid from "@mui/material/Grid";
+import React from "react";
 import { useStyles } from "../../../theme";
 import { useNavigate, useLocation } from "react-router-dom";
 
@@ -36,6 +36,7 @@ export default function MyLibraryToggle(props: IMyLibraryToggleProps) {
             ? classes.libraryActive
             : classes.libraryDefault
         }
+        data-testid="myLibraryToggle"
       >
         <Typography variant="body1"> Currently reading</Typography>
       </Grid>

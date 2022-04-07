@@ -1,8 +1,9 @@
 import { Grid } from "@mui/material";
 import NavHead from "../../../atoms/Footer/Nav/NavHead/NavHead";
 import NavItems from "../../../atoms/Footer/Nav/NavItems/NavItems";
+import React from "react";
 
-const list = [
+export const list = [
   "Book lists",
   "What is Nonfiction?",
   "What to read next?",
@@ -11,7 +12,12 @@ const list = [
 
 const NavLinks1 = () => {
   return (
-    <Grid container direction="column" rowSpacing="16px">
+    <Grid
+      container
+      direction="column"
+      rowSpacing="16px"
+      data-testid="navlinks1"
+    >
       <Grid item>
         <NavHead name="Editorial" />
       </Grid>

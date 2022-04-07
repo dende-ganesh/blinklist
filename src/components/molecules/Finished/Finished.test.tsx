@@ -1,6 +1,5 @@
 import { fireEvent, render, screen } from "@testing-library/react";
 import "@testing-library/jest-dom";
-import RocketLaunchOutlinedIcon from "@mui/icons-material/RocketLaunchOutlined";
 import React from "react";
 import { Finished } from "./Finished";
 const fakeProps = {

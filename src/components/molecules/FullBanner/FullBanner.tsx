@@ -2,11 +2,17 @@ import { Card, CardMedia, Grid } from "@mui/material";
 import { Box } from "@mui/system";
 import { useStyles } from "../../../theme";
 import Banner from "../Banner/Banner";
+import React from "react";
 
 const FullBanner = () => {
   const classes = useStyles();
   return (
-    <Box width="fit-content" height="264px" className={classes.bannerBox}>
+    <Box
+      width="fit-content"
+      height="264px"
+      className={classes.bannerBox}
+      data-testid="fullBanner"
+    >
       <Grid container columnSpacing="112px">
         <Grid item sx={{ marginTop: "45px", marginLeft: "40px" }}>
           <Banner />
