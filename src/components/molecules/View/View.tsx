@@ -10,7 +10,7 @@ export interface IViewProps {
 export default function View(props: IViewProps) {
   const classes = useStyles();
   return (
-    <div className={classes.time}>
+    <div className={classes.time} data-testid="view">
       <Person />
       <Timer>{props.children}</Timer>
     </div>
