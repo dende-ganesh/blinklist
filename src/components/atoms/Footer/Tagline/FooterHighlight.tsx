@@ -5,7 +5,7 @@ const FooterHighlight = () => {
   return (
     <>
       <Typography variant="subtitle1" sx={{ color: "#0365F2" }}>
-        Big ideas in small packages Start learnign now
+        Big ideas in small packages Start learning now
       </Typography>
     </>
   );

@@ -11,6 +11,7 @@ const BlinkWithTag = () => {
         height: "128px",
       }}
       direction="row"
+      data-testid="blinkWithTag"
     >
       <Grid item sx={{ height: "26px", width: "124px" }}>
         <img src="./CoverImages/logo.png" alt="Blink logo" />

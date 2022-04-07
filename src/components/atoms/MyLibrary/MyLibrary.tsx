@@ -1,6 +1,8 @@
 import Typography from "@mui/material/Typography";
 import { ReactNode } from "react";
 import { useStyles } from "../../../theme";
+import React from "react";
+
 interface PropTypes {
   children: ReactNode;
 }

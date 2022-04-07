@@ -1,5 +1,6 @@
 import ExploreContent from "./ExploreContent";
 import { ComponentStory, ComponentMeta } from "@storybook/react";
+import React from "react";
 
 export default {
   title: "Atoms/ExploreContent",

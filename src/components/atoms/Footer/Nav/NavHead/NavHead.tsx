@@ -1,4 +1,5 @@
 import Typography from "@mui/material/Typography";
+import React from "react";
 
 interface NavHeadType {
   name: string;
