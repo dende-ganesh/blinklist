@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1649339855796" clover="3.2.0">
-  <project timestamp="1649339855796" name="All files">
-    <metrics statements="50" coveredstatements="50" conditionals="6" coveredconditionals="6" methods="30" coveredmethods="30" elements="86" coveredelements="86" complexity="0" loc="50" ncloc="50" packages="27" files="27" classes="27"/>
+<coverage generated="1649340988215" clover="3.2.0">
+  <project timestamp="1649340988215" name="All files">
+    <metrics statements="54" coveredstatements="54" conditionals="6" coveredconditionals="6" methods="32" coveredmethods="32" elements="92" coveredelements="92" complexity="0" loc="54" ncloc="54" packages="28" files="28" classes="28"/>
     <package name="components.atoms.Author">
       <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
       <file name="Author.tsx" path="/home/ganesd/Desktop/React/blinklist_app/src/components/atoms/Author/Author.tsx">
@@ -196,6 +196,16 @@
         <line num="12" count="2" type="stmt"/>
         <line num="13" count="2" type="stmt"/>
         <line num="17" count="1" type="stmt"/>
+      </file>
+    </package>
+    <package name="components.molecules.Finished">
+      <metrics statements="4" coveredstatements="4" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2"/>
+      <file name="Finished.tsx" path="/home/ganesd/Desktop/React/blinklist_app/src/components/molecules/Finished/Finished.tsx">
+        <metrics statements="4" coveredstatements="4" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2"/>
+        <line num="7" count="1" type="stmt"/>
+        <line num="8" count="2" type="stmt"/>
+        <line num="20" count="1" type="stmt"/>
+        <line num="21" count="1" type="stmt"/>
       </file>
     </package>
     <package name="components.molecules.View">
