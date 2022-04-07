@@ -1,6 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1649250790536" clover="3.2.0">
-  <project timestamp="1649250790536" name="All files">
-    <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0" elements="0" coveredelements="0" complexity="0" loc="0" ncloc="0" packages="0" files="0" classes="0"/>
+<coverage generated="1649319083302" clover="3.2.0">
+  <project timestamp="1649319083302" name="All files">
+    <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2" elements="4" coveredelements="4" complexity="0" loc="2" ncloc="2" packages="2" files="2" classes="2"/>
+    <package name="Author">
+      <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+      <file name="Author.tsx" path="/home/ganesd/Desktop/React/blinklist_app/src/components/atoms/Author/Author.tsx">
+        <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+        <line num="10" count="1" type="stmt"/>
+      </file>
+    </package>
+    <package name="BookTitle">
+      <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+      <file name="BookTitle.tsx" path="/home/ganesd/Desktop/React/blinklist_app/src/components/atoms/BookTitle/BookTitle.tsx">
+        <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+        <line num="10" count="1" type="stmt"/>
+      </file>
+    </package>
   </project>
 </coverage>

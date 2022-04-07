@@ -1,4 +1,4 @@
-import Typography from "@mui/material/Typography/Typography";
+import Typography from "@mui/material/Typography";
 import * as React from "react";
 import { ReactNode } from "react";
 

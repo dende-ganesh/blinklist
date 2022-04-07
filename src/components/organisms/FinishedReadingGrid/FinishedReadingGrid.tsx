@@ -11,7 +11,7 @@ export default function FinishedReadingGrid() {
       setFinishedReadingBooks(data);
     });
   }, []);
-  const handleClick = (item: string) => {
+  const handleClick = async (item: string) => {
     const reaminingBooks = finishedreading.filter((reading: any) => {
       return reading.title !== item;
     });
@@ -19,14 +19,14 @@ export default function FinishedReadingGrid() {
     const targetBook: any = finishedreading.find((reading: any) => {
       return reading.title === item;
     });
-    axios
+    await axios
       .delete(`http://localhost:3001/finishedbooks/${targetBook.id}`)
       .then((res) => {
         console.log(res);
         console.log(res.data);
       });
 
-    axios
+    await axios
       .post("http://localhost:3001/books", targetBook)
       .then((res) => {
         console.log(res.data);
