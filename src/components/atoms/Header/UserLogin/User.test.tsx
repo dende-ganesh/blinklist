@@ -4,8 +4,8 @@ import "@testing-library/jest-dom";
 import React from "react";
 import User from "./User";
 
-test(" to check  footer  logo with tag ", () => {
+test(" to check  user logo ", () => {
   render(<User />);
-  const Element = screen.getByTestId("User");
-  expect(Element).toBeInTheDocument();
+  const element = screen.getByTestId("User");
+  expect(element).toBeInTheDocument();
 });

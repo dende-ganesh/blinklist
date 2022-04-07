@@ -1,5 +1,5 @@
 import Link from "@mui/material/Link";
-import * as React from "react";
+import React from "react";
 export interface IDefaultLinkProps {
   children: React.ReactNode;
   // varaint: "navLink" | "exploreCardButton" | "libraryCardButton";

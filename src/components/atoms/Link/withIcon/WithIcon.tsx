@@ -20,12 +20,13 @@ export default function WithIcon(props: IWithIconsProps) {
         onClick={() => {
           props.clickHandler();
         }}
+        data-testid="explore"
       >
         {children}
         {props.clicked ? (
-          <KeyboardArrowUp></KeyboardArrowUp>
+          <KeyboardArrowUp data-testid="uparrow"></KeyboardArrowUp>
         ) : (
-          <KeyboardArrowDown></KeyboardArrowDown>
+          <KeyboardArrowDown data-testid="downarrow"></KeyboardArrowDown>
         )}
       </Link>
     </>
