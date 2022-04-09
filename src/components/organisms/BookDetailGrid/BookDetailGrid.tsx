@@ -21,6 +21,7 @@ export default function BookDetailGrid() {
       direction="column"
       spacing={4}
       sx={{ marginTop: "50px", marginLeft: "100px" }}
+      data-testid="bookDetailGrid"
     >
       <Grid item>
         <Typography variant="body2">Get the key ideas from</Typography>

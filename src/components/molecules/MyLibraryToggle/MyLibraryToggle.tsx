@@ -52,6 +52,7 @@ export default function MyLibraryToggle(props: IMyLibraryToggleProps) {
             ? classes.libraryActive
             : classes.libraryDefault
         }
+        data-testid="finishedTab"
       >
         <Typography variant="body1"> Finished</Typography>
       </Grid>

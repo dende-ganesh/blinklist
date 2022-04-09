@@ -1,4 +1,4 @@
-import { render, screen } from "@testing-library/react";
+import { fireEvent, render, screen } from "@testing-library/react";
 import "@testing-library/jest-dom";
 import React from "react";
 import MyLibraryToggle from "./MyLibraryToggle";
@@ -20,5 +20,17 @@ const MockLibraryToggle = () => {
 test(" to check MyLibraryToggle ", () => {
   render(<MockLibraryToggle />);
   const subtitleElement = screen.getByTestId("myLibraryToggle");
+  expect(subtitleElement).toBeInTheDocument();
+});
+test(" to check MyLibraryToggle ", () => {
+  render(<MockLibraryToggle />);
+  const subtitleElement = screen.getByTestId("myLibraryToggle");
+  fireEvent.click(subtitleElement);
+  expect(subtitleElement).toBeInTheDocument();
+});
+test(" to check MyLibraryToggle ", () => {
+  render(<MockLibraryToggle />);
+  const subtitleElement = screen.getByTestId("finishedTab");
+  fireEvent.click(subtitleElement);
   expect(subtitleElement).toBeInTheDocument();
 });

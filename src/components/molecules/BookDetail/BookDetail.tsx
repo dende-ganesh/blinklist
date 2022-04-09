@@ -9,7 +9,7 @@ import { useNavigate } from "react-router-dom";
 export default function BookDetail() {
   const navigate = useNavigate();
   return (
-    <Grid container data-testid="bookdetail">
+    <Grid container data-testid="bookDetail">
       <Grid item md={8}>
         <Grid container direction="column" rowSpacing={3}>
           <Grid item>
