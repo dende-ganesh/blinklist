@@ -15,3 +15,13 @@ test("to check book detail toggle tab", () => {
   const element = screen.getByTestId("bookDetailGrid");
   expect(element).toBeInTheDocument();
 });
+test("to check book detail toggle  content", () => {
+  render(<MockDetailGrid />);
+  const element = screen.getByTestId("toggleTabs");
+  expect(element).toBeInTheDocument();
+});
+test("to check book detail toggle content", () => {
+  render(<MockDetailGrid />);
+  const element = screen.getByTestId("toggleContent");
+  expect(element).toBeInTheDocument();
+});

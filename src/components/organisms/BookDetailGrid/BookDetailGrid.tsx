@@ -29,14 +29,18 @@ export default function BookDetailGrid() {
       <Grid item>
         <BookDetail></BookDetail>
       </Grid>
-      <Grid item>
+      <Grid item data-testid="toggleTabs">
         <ToggleTabs
           active={active}
           setActive={(act) => setActive(act)}
         ></ToggleTabs>
       </Grid>
       <Grid item sx={{ width: "75%" }}>
-        <Typography variant="body1" sx={{ fontWeight: 400 }}>
+        <Typography
+          variant="body1"
+          sx={{ fontWeight: 400 }}
+          data-testid="toggleContent"
+        >
           {active === "synopsis"
             ? toggleTabs.synopsis
             : active === "who"

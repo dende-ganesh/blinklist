@@ -31,7 +31,13 @@ export default function BookGrid(props: IBookGridProps) {
     );
   });
   return (
-    <Grid container item sx={{ marginLeft: "100px" }} spacing={2}>
+    <Grid
+      container
+      item
+      sx={{ marginLeft: "100px" }}
+      spacing={2}
+      data-testid="bookGrid"
+    >
       {books}
     </Grid>
   );
