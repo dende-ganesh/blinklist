@@ -1,5 +1,5 @@
 import Grid from "@mui/material/Grid";
-import * as React from "react";
+import React from "react";
 import BlinkWithTag from "../../atoms/Footer/BlinkWithTag/BlinkWithTag";
 import CopyRight from "../../atoms/Footer/CopyRight/FooterCopyRight";
 import NavLinks1 from "../../molecules/Footer/NavLinks1/NavLinks1";
@@ -16,6 +16,7 @@ export default function Footer() {
         paddingLeft: "10%",
         flexWrap: "wrap",
       }}
+      data-testid="footer"
     >
       <Grid item sx={{ height: "300px" }}>
         <Grid container columnSpacing={2} justifyContent="center">

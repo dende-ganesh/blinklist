@@ -19,7 +19,7 @@ import FavoriteBorderOutlinedIcon from "@mui/icons-material/FavoriteBorderOutlin
 import SchoolOutlinedIcon from "@mui/icons-material/SchoolOutlined";
 import ExploreHeader from "../../molecules/ExploreHeader/ExploreHeader";
 import ExploreMenuItem from "../../molecules/ExploreMenu/ExploreMenuItem";
-
+import React from "react";
 const itemList = [
   { name: "Entrepreneurship", icon: <RocketLaunchOutlinedIcon /> },
   { name: "Science", icon: <ScienceOutlinedIcon /> },
@@ -68,6 +68,7 @@ const ExploreCard = (props: PageChange) => {
           width: "1000px",
           marginLeft: "450px",
         }}
+        data-testid="exploreMenu"
       >
         {items.map((e) => (
           <Grid item xs={4}>

@@ -7,6 +7,7 @@ import { Grid } from "@mui/material";
 import { Link, useNavigate } from "react-router-dom";
 import { useState } from "react";
 import ExploreCard from "../ExploreCard/ExploreCard";
+import React from "react";
 
 interface PropTypes {
   clicked: boolean;
@@ -25,6 +26,7 @@ export default function Headers(_props: PropTypes) {
         sx={{ width: "1500px", height: "86px", marginLeft: "350px" }}
         columnSpacing={10}
         alignItems="center"
+        data-testid="header"
       >
         <Grid item>
           <Link to="/">
@@ -55,6 +57,7 @@ export default function Headers(_props: PropTypes) {
         item
         container
         className={clicked ? classes.visible : classes.hidden}
+        data-testid="exploreCardHidden"
       >
         <ExploreCard handleChange={() => navigate("/explore")} />
       </Grid>
