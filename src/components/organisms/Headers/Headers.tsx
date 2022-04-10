@@ -5,9 +5,8 @@ import UserLoggedIn from "../../molecules/UserLoggedIn/UserLoggedIn";
 import { useStyles } from "../../../theme";
 import { Grid } from "@mui/material";
 import { Link, useNavigate } from "react-router-dom";
-import { useState } from "react";
+import React, { useState } from "react";
 import ExploreCard from "../ExploreCard/ExploreCard";
-import React from "react";
 
 interface PropTypes {
   clicked: boolean;

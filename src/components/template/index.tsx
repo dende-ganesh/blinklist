@@ -10,7 +10,12 @@ export interface ITemplateProps {
 
 export default function Template(props: ITemplateProps) {
   return (
-    <Grid container columnSpacing={6} justifyContent="center">
+    <Grid
+      container
+      columnSpacing={6}
+      justifyContent="center"
+      data-testid="template"
+    >
       <Grid item xs={12}>
         {props.header}
       </Grid>
