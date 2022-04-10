@@ -1,5 +1,5 @@
 import Grid from "@mui/material/Grid";
-import * as React from "react";
+import React from "react";
 import ReadingBook from "../../molecules/BookCard/ReadingBook/ReadingBook";
 
 export interface IBookGridProps {

@@ -8,12 +8,7 @@ import { Link, useNavigate } from "react-router-dom";
 import React, { useState } from "react";
 import ExploreCard from "../ExploreCard/ExploreCard";
 
-interface PropTypes {
-  clicked: boolean;
-  handleChange: () => void;
-}
-
-export default function Headers(_props: PropTypes) {
+export default function Headers() {
   const [clicked, handleClicked] = useState(false);
   const navigate = useNavigate();
   const classes = useStyles();

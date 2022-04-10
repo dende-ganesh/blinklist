@@ -6,6 +6,4 @@ export default {
   component: Headers,
 } as ComponentMeta<typeof Headers>;
 
-export const Header: ComponentStory<typeof Headers> = () => (
-  <Headers handleChange={() => alert()} clicked={false}></Headers>
-);
+export const Header: ComponentStory<typeof Headers> = () => <Headers></Headers>;

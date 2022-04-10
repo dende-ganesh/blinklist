@@ -7,16 +7,11 @@ import Template from "../../template";
 import Headers from "../../organisms/Headers/Headers";
 
 export default function Library() {
-  const [exploreClick, setExploreClick] = React.useState(false);
   const [active, setActive] = React.useState("finished");
-  function handleChange() {
-    setExploreClick(!exploreClick);
-  }
+
   return (
     <Template
-      header={
-        <Headers handleChange={handleChange} clicked={exploreClick}></Headers>
-      }
+      header={<Headers></Headers>}
       content={
         <>
           <MyLibrary>My Library</MyLibrary>

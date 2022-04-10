@@ -23,9 +23,9 @@
         <div class='clearfix'>
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">28.57% </span>
+                <span class="strong">100% </span>
                 <span class="quiet">Statements</span>
-                <span class='fraction'>4/14</span>
+                <span class='fraction'>14/14</span>
             </div>
         
             
@@ -37,16 +37,16 @@
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">0% </span>
+                <span class="strong">100% </span>
                 <span class="quiet">Functions</span>
-                <span class='fraction'>0/7</span>
+                <span class='fraction'>7/7</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">28.57% </span>
+                <span class="strong">100% </span>
                 <span class="quiet">Lines</span>
-                <span class='fraction'>4/14</span>
+                <span class='fraction'>14/14</span>
             </div>
         
             
@@ -61,7 +61,7 @@
             </div>
         </template>
     </div>
-    <div class='status-line low'></div>
+    <div class='status-line high'></div>
     <pre><table class="coverage">
 <tr><td class="line-count quiet"><a name='L1'></a><a href='#L1'>1</a>
 <a name='L2'></a><a href='#L2'>2</a>
@@ -105,35 +105,35 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">3x</span>
+<span class="cline-any cline-yes">2x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">3x</span>
+<span class="cline-any cline-yes">2x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">3x</span>
+<span class="cline-any cline-yes">2x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">3x</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">2x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -142,35 +142,35 @@ import { Dispatch } from "redux";
 import { Blinks } from "./ActionTypes";
 import { FETCH_BLINKS, FETCH_FAILURE, FETCH_SUCCESS } from "./DataActiontypes";
 &nbsp;
-export const fetchBlinks = <span class="fstat-no" title="function not covered" >()</span> =&gt; {
-<span class="cstat-no" title="statement not covered" >  return {</span>
+export const fetchBlinks = () =&gt; {
+  return {
     type: FETCH_BLINKS,
   };
 };
-export const fetchSuccess = <span class="fstat-no" title="function not covered" >(b</span>links: Blinks[]) =&gt; {
-<span class="cstat-no" title="statement not covered" >  return {</span>
+export const fetchSuccess = (blinks: Blinks[]) =&gt; {
+  return {
     type: FETCH_SUCCESS,
     payload: blinks,
   };
 };
-export const fetchFailure = <span class="fstat-no" title="function not covered" >(e</span>rror: string) =&gt; {
-<span class="cstat-no" title="statement not covered" >  return {</span>
+export const fetchFailure = (error: string) =&gt; {
+  return {
     type: FETCH_FAILURE,
     payload: error,
   };
 };
-export const fetchBlink = <span class="fstat-no" title="function not covered" >()</span> =&gt; {
-<span class="cstat-no" title="statement not covered" >  return <span class="fstat-no" title="function not covered" >as</span>ync (dispatch: Dispatch) =&gt; {</span>
-<span class="cstat-no" title="statement not covered" >    dispatch(fetchBlinks());</span>
-<span class="cstat-no" title="statement not covered" >    await axios</span>
+export const fetchBlink = () =&gt; {
+  return async (dispatch: Dispatch) =&gt; {
+    dispatch(fetchBlinks());
+    await axios
       .get("http://localhost:3001/trending")
-      .then(<span class="fstat-no" title="function not covered" >(r</span>es) =&gt; {
-        const blinks = <span class="cstat-no" title="statement not covered" >res.data;</span>
-<span class="cstat-no" title="statement not covered" >        dispatch(fetchSuccess(blinks));</span>
+      .then((res) =&gt; {
+        const blinks = res.data;
+        dispatch(fetchSuccess(blinks));
       })
-      .catch(<span class="fstat-no" title="function not covered" >(e</span>rror: Error) =&gt; {
-        const errorVal = <span class="cstat-no" title="statement not covered" >error.message;</span>
-<span class="cstat-no" title="statement not covered" >        dispatch(fetchFailure(errorVal));</span>
+      .catch((error: Error) =&gt; {
+        const errorVal = error.message;
+        dispatch(fetchFailure(errorVal));
       });
   };
 };
@@ -181,7 +181,7 @@ export const fetchBlink = <span class="fstat-no" title="function not covered" >(
             <div class='footer quiet pad2 space-top1 center small'>
                 Code coverage generated by
                 <a href="https://istanbul.js.org/" target="_blank" rel="noopener noreferrer">istanbul</a>
-                at Sun Apr 10 2022 11:23:09 GMT+0530 (India Standard Time)
+                at Sun Apr 10 2022 15:18:58 GMT+0530 (India Standard Time)
             </div>
         <script src="../../prettify.js"></script>
         <script>

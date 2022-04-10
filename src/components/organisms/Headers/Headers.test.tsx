@@ -10,10 +10,7 @@ const fakeProps = {
 const MockHeader = () => {
   return (
     <BrowserRouter>
-      <Headers
-        clicked={fakeProps.clicked}
-        handleChange={fakeProps.handleChange}
-      />
+      <Headers />
     </BrowserRouter>
   );
 };

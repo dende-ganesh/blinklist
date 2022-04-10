@@ -7,6 +7,7 @@ import axios from "axios";
 import { useDispatch, useSelector } from "react-redux";
 import { State } from "../../../redux/dataReducer";
 import { fetchBlink } from "../../../redux/dataActions";
+import React from "react";
 
 function TrendingGrid() {
   const dispatch = useDispatch();
