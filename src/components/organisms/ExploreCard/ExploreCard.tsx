@@ -70,8 +70,8 @@ const ExploreCard = (props: PageChange) => {
         }}
         data-testid="exploreMenu"
       >
-        {items.map((e) => (
-          <Grid item xs={4}>
+        {items.map((e, index) => (
+          <Grid key={index} item xs={4}>
             {e}
           </Grid>
         ))}

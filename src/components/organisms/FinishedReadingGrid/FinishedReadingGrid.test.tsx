@@ -3,8 +3,7 @@ import "@testing-library/jest-dom";
 import React from "react";
 import FinishedReadingGrid from "./FinishedReadingGrid";
 beforeEach(() => {
-  const el = jest.mock("../../../__mocks__/axios");
-  console.log(el);
+  jest.mock("../../../__mocks__/axios");
 });
 test("to check currently reading grid ", async () => {
   render(<FinishedReadingGrid />);
