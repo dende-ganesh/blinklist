@@ -4,7 +4,6 @@ import React from "react";
 import CurrentlyReadingGrid from "./CurrentlyReadingGrid";
 beforeEach(() => {
   const el = jest.mock("../../../__mocks__/axios");
-  console.log(el);
 });
 test("to check currently reading grid ", async () => {
   render(<CurrentlyReadingGrid />);
@@ -12,5 +11,5 @@ test("to check currently reading grid ", async () => {
   const bookElement = await screen.findAllByRole("button", {
     name: "Finished",
   });
-  expect(bookElement).toBeInTheDocument();
+  expect(bookElement.length).not.toBe(0);
 });

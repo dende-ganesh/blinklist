@@ -16,7 +16,7 @@ export interface IBookGridProps {
 export default function BookGrid(props: IBookGridProps) {
   const books = props.bookList.map((book) => {
     return (
-      <Grid item sx={{ width: "28%" }}>
+      <Grid item sx={{ width: "28%" }} key={book.title}>
         <ReadingBook
           key={book.title}
           title={book.title}

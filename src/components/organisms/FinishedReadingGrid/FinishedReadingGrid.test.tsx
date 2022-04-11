@@ -9,7 +9,7 @@ test("to check currently reading grid ", async () => {
   render(<FinishedReadingGrid />);
 
   const bookElement = await screen.findAllByRole("button", {
-    name: "Finished",
+    name: "Read Again",
   });
-  expect(bookElement).toBeInTheDocument();
+  expect(bookElement.length).not.toBe(0);
 });

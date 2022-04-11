@@ -1,7 +1,6 @@
 
 const mockResponse = {
-    data: {
-       "books":[ 
+    data: [ 
         {
           "id": 8,
           "title": "Eat Better, Feel Better",
@@ -25,9 +24,9 @@ const mockResponse = {
           "image": "11"
         }
       ]
-    }
+    
 
 };
 export default {
-    get: jest.fn().mockResolvedValue(mockResponse.data.books)
+    get: jest.fn().mockResolvedValue(mockResponse)
 }
