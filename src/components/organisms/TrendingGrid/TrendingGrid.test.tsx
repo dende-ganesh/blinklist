@@ -14,6 +14,6 @@ const MockTrendingGrid = () => {
     </Provider>
   );
 };
-test("to check trending grid ", () => {
-  render(<MockTrendingGrid />);
+test("to check trending grid ", async () => {
+  await render(<MockTrendingGrid />);
 });

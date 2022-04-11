@@ -23,11 +23,11 @@ const mockResponse = {
           "author": "Steve Glaveski",
           "time": "15-minute read",
           "image": "11"
-        },]
+        }
+      ]
     }
-}
 
-
+};
 export default {
-    get: jest.fn().mockResolvedValue(mockResponse)
+    get: jest.fn().mockResolvedValue(mockResponse.data.books)
 }

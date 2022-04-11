@@ -9,8 +9,8 @@ beforeEach(() => {
 test("to check currently reading grid ", async () => {
   render(<CurrentlyReadingGrid />);
 
-  // const bookElement = await screen.findAllByRole("button", {
-  //   name: "Finished",
-  // });
-  // expect(bookElement).toBeInTheDocument();
+  const bookElement = await screen.findAllByRole("button", {
+    name: "Finished",
+  });
+  expect(bookElement).toBeInTheDocument();
 });
