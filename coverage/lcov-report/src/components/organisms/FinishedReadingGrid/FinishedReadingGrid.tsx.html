@@ -23,9 +23,9 @@
         <div class='clearfix'>
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">0% </span>
+                <span class="strong">38.88% </span>
                 <span class="quiet">Statements</span>
-                <span class='fraction'>0/18</span>
+                <span class='fraction'>7/18</span>
             </div>
         
             
@@ -37,16 +37,16 @@
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">0% </span>
+                <span class="strong">33.33% </span>
                 <span class="quiet">Functions</span>
-                <span class='fraction'>0/9</span>
+                <span class='fraction'>3/9</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">0% </span>
+                <span class="strong">38.88% </span>
                 <span class="quiet">Lines</span>
-                <span class='fraction'>0/18</span>
+                <span class='fraction'>7/18</span>
             </div>
         
             
@@ -113,31 +113,25 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">3x</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">2x</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -145,6 +139,12 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">2x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -156,15 +156,15 @@ import React, { useEffect, useState } from "react";
 import { ReadAgain } from "../../molecules/ReadAgain/ReadAgain";
 import BookGrid from "../BookGrid/BookGrid";
 &nbsp;
-export default function <span class="fstat-no" title="function not covered" >FinishedReadingGrid(</span>) {
-  const [finishedreading, setFinishedReadingBooks] = <span class="cstat-no" title="statement not covered" >useState([]);</span>
-<span class="cstat-no" title="statement not covered" >  useEffect(<span class="fstat-no" title="function not covered" >()</span> =&gt; {</span>
-<span class="cstat-no" title="statement not covered" >    axios.get("http://localhost:3001/finishedbooks").then(<span class="fstat-no" title="function not covered" >(r</span>es) =&gt; {</span>
-      const data = <span class="cstat-no" title="statement not covered" >res.data;</span>
-<span class="cstat-no" title="statement not covered" >      setFinishedReadingBooks(data);</span>
+export default function FinishedReadingGrid() {
+  const [finishedreading, setFinishedReadingBooks] = useState([]);
+  useEffect(() =&gt; {
+    axios.get("http://localhost:3001/finishedbooks").then((res) =&gt; {
+      const data = res.data;
+      setFinishedReadingBooks(data);
     });
   }, []);
-  const handleClick = <span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" >as</span>ync (item: string) =&gt; {</span>
+  const handleClick = <span class="fstat-no" title="function not covered" >as</span>ync (item: string) =&gt; {
     const reaminingBooks = <span class="cstat-no" title="statement not covered" >finishedreading.filter(<span class="fstat-no" title="function not covered" >(r</span>eading: any) =&gt; {</span>
 <span class="cstat-no" title="statement not covered" >      return reading.title !== item;</span>
     });
@@ -188,7 +188,7 @@ export default function <span class="fstat-no" title="function not covered" >Fin
 <span class="cstat-no" title="statement not covered" >        console.log(error);</span>
       });
   };
-<span class="cstat-no" title="statement not covered" >  return (</span>
+  return (
     &lt;BookGrid
       bookList={finishedreading}
       btn={&lt;ReadAgain id="" handleClick={handleClick} /&gt;}
@@ -202,7 +202,7 @@ export default function <span class="fstat-no" title="function not covered" >Fin
             <div class='footer quiet pad2 space-top1 center small'>
                 Code coverage generated by
                 <a href="https://istanbul.js.org/" target="_blank" rel="noopener noreferrer">istanbul</a>
-                at Mon Apr 11 2022 14:34:23 GMT+0530 (India Standard Time)
+                at Mon Apr 11 2022 15:05:45 GMT+0530 (India Standard Time)
             </div>
         <script src="../../../../prettify.js"></script>
         <script>

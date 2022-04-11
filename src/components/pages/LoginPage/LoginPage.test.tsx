@@ -4,15 +4,7 @@ import React, { ReactNode } from "react";
 import "@testing-library/jest-dom";
 import { Auth0Provider } from "@auth0/auth0-react";
 const MockLoginPage = () => {
-  return (
-    <Auth0Provider
-      domain="dev-j2thg76y.us.auth0.com"
-      clientId="ZS7bN3N8n8t0FWrRAj75veKmBBCNXaok"
-      redirectUri={window.location.origin}
-    >
-      <LoginPage></LoginPage>
-    </Auth0Provider>
-  );
+  return <LoginPage></LoginPage>;
 };
 test(" to check LoginPage name ", () => {
   render(<MockLoginPage />);
