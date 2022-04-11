@@ -7,5 +7,10 @@ export default {
 } as ComponentMeta<typeof UserLoggedIn>;
 
 export const userLogin: ComponentStory<typeof UserLoggedIn> = () => (
-  <UserLoggedIn></UserLoggedIn>
+  <UserLoggedIn
+    logClick={false}
+    handleLogin={function (): void {
+      throw new Error("Function not implemented.");
+    }}
+  ></UserLoggedIn>
 );

@@ -12,6 +12,7 @@ export default function Headers() {
   const [clicked, handleClicked] = useState(false);
   const navigate = useNavigate();
   const classes = useStyles();
+  const [logClick, handleLogin] = useState(true);
   return (
     <Grid container direction="column">
       <Grid
@@ -44,7 +45,10 @@ export default function Headers() {
           </DefaultLink>
         </Grid>
         <Grid item sx={{ marginLeft: "300px" }}>
-          <UserLoggedIn></UserLoggedIn>
+          <UserLoggedIn
+            logClick={logClick}
+            handleLogin={() => handleLogin(!logClick)}
+          ></UserLoggedIn>
         </Grid>
       </Grid>
       <Grid
