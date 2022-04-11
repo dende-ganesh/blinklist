@@ -4,11 +4,11 @@ import User from "../../atoms/Header/UserLogin/User";
 import React from "react";
 import { Button } from "@mui/material";
 import { useAuth0 } from "@auth0/auth0-react";
-interface propTypes {
+interface PropTypes {
   logClick: boolean;
   handleLogin: () => void;
 }
-export default function UserLoggedIn(props: propTypes) {
+export default function UserLoggedIn(props: PropTypes) {
   const { logout } = useAuth0();
   const classes = useStyles();
   return (
